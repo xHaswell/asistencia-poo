@@ -47,7 +47,7 @@ export const GraficaScreen = () => {
 
   const getAsistencias = async () => {
     const url =
-      "https://us-central1-softwell-vm.cloudfunctions.net/api/tec/asistenciasfbd";
+      "https://us-central1-softwell-vm.cloudfunctions.net/api/tec/asistenciaspoo";
     const resp = await fetch(url);
     const { data } = await resp.json();
     setState({
@@ -63,7 +63,7 @@ export const GraficaScreen = () => {
   return (
     <>
       <div className="header">
-        <h1 className="title">Asistencias FBD</h1>
+        <h1 className="title">Asistencias POO</h1>
       </div>
       <HorizontalBar data={data} options={options} />
     </>
